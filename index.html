@@ -3,31 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Krit Vardhan Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>K Krit Vardhan - Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>K Krit Vardhan</h1>
-        <h2>Backend Developer</h2>
-        <p>Crafting Efficient and Scalable Solutions</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-content">
+            <h1>Hello, I am <span>Krit Vardhan</span>, Backend Developer</h1>
+            <p>I build efficient back-end systems and create impactful projects.</p>
+            <a href="#contact" class="btn">Let's get in touch!</a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h3>About Me</h3>
-            <p>I am K Krit Vardhan, a recent graduate with a B.Tech in Information Technology from Bansal Institute of Engineering and Technology, where I achieved a CGPA of 8.23...</p> <!-- Add more from your bio -->
-        </section>
-    </main>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills and Tools</h2>
+        <div class="skills-cloud">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>PostgreSQL</span>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <img src="project1.jpeg" alt="Chatbot">
+                <h3>Chatbot</h3>
+                <p>Developed using Python and machine learning algorithms.</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpeg" alt="ChatApp">
+                <h3>Chat Application</h3>
+                <p>Built using Core Java and multithreading for efficient messaging.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Let's talk about your project</h2>
+        <a href="mailto:kuwarkritvardhan@gmail.com" class="btn">Contact us</a>
+    </section>
+
     <footer>
-        <p>&copy; 2024 K Krit Vardhan. All rights reserved.</p>
+        <p>&copy; 2024 K Krit Vardhan. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
