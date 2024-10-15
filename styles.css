@@ -6,19 +6,26 @@
     font-family: 'Arial', sans-serif;
 }
 
+
 body {
-    background-color: #111;
+    background-image: url('img/1.jpg'); /* Ensure the correct path to the image */
+    background-size: cover; /* This makes the image cover the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Ensures the background stays in place when scrolling */
+    background-position: center;
     color: #eee;
-    line-height: 1.6;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: #111;
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     color: white;
-    text-align: center;
     padding: 50px 20px;
-    position: relative;
+    text-align: center;
 }
 
 nav ul {
@@ -28,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 nav ul li a {
@@ -38,7 +45,7 @@ nav ul li a {
 }
 
 .header-content {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .header-content h1 {
