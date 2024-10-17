@@ -1,3 +1,119 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-content span {
+    color: #00ff88; /* Green highlight */
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #aaa;
+    max-width: 500px;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+
+.cta-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #00ff88;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #00cc66;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    max-width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Background Decoration (Optional) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #00ff88;
+    clip-path: circle(50% at 75% 25%);
+    z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
+
+
 /* Global Styles */
 * {
     box-sizing: border-box;
