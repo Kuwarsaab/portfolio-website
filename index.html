@@ -8,53 +8,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h1>Hello, I am <span>K Krit Vardhan</span>, Backend Developer</h1>
-            <p>I build efficient back-end systems and create impactful projects.</p>
-            <a href="#contact" class="btn">Let's get in touch!</a>
-        </div>
-    </header>
+    <section id="hero" class="section-hero">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Hello, I am <span>K Krit Vardhan</span>, Backend Developer</h1>
+                <p>I build efficient back-end systems and create impactful projects.</p>
+                <a href="#contact" class="btn">Let's get in touch!</a>
+            </div>
+        </header>
+    </section>
 
-    <section id="skills" class="skills-section">
+    <!-- Section 2: About -->
+    <section id="about" class="section-about">
         <h2>Skills and Tools</h2>
-        <div class="skills-cloud">
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Python</span>
-            <span>PostgreSQL</span>
-        </div>
+        <p>For a detailed overview, check out my tools and skills.</p>
+        <!-- Skill cloud and content here -->
+        <section id="skills" class="skills-section">
+            <div class="skills-cloud">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+            </div>
+        </section>
     </section>
 
-    <section id="projects" class="projects-section">
-        <h2>Selected Projects</h2>
-        <div class="projects">
-            <div class="project-item">
-                <img src="img/project1.jpeg" width="250px" height="200px" alt="Chatbot">
-                <h3>Chatbot</h3>
-                <p>Developed using Python and machine learning algorithms.</p>
+    <section id="projects" class="section-projects">
+        <h2>My Projects</h2>
+        <!-- Project showcase content here -->
+        <section id="projects" class="projects-section">
+            <div class="projects">
+                <div class="project-item">
+                    <img src="img/project1.jpeg" width="250px" height="200px" alt="Chatbot">
+                    <h3>Chatbot</h3>
+                    <p>Developed using Python and machine learning algorithms.</p>
+                </div>
+                <div class="project-item">
+                    <img src="img/project2.jpeg" width="250px" height="200px" alt="ChatApp">
+                    <h3>Chat Application</h3>
+                    <p>Built using Core Java and multithreading for efficient messaging.</p>
+                </div>
             </div>
-            <div class="project-item">
-                <img src="img/project2.jpeg" width="250px" height="200px" alt="ChatApp">
-                <h3>Chat Application</h3>
-                <p>Built using Core Java and multithreading for efficient messaging.</p>
-            </div>
-        </div>
+        </section>
     </section>
 
-    <section id="contact" class="contact-section">
+    <!-- Section 4: Contact -->
+    <section id="contact" class="section-contact">
+        <h2>Contact Me</h2>
+        <!-- Contact form and details here -->
         <h2>Let's talk about your project</h2>
         <a href="mailto:kuwarkritvardhan@gmail.com" class="btn">Contact us</a>
     </section>

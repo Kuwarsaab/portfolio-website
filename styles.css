@@ -8,21 +8,11 @@
 
 
 body {
-    background-image: url('img/1.jpg'); /* Ensure the correct path to the image */
-    background-size: cover; /* This makes the image cover the entire page */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Ensures the background stays in place when scrolling */
-    background-position: center;
     color: #eee;
     font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-image: url('img/1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -132,6 +122,85 @@ footer {
     text-align: center;
     padding: 20px;
     color: #777;
+}
+
+/* Common styles */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Section 1: Hero */
+.section-hero {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Section 2: About */
+.section-about {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Section 3: Projects */
+.section-projects {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Section 4: Contact */
+.section-contact {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #00ff88;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00cc66;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #00ff88;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 
