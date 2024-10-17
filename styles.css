@@ -133,3 +133,49 @@ footer {
     padding: 20px;
     color: #777;
 }
+
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    /* Adjust header text size for mobile */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Center nav items and adjust spacing */
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    /* Stack project items vertically on mobile */
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Add padding for mobile */
+    .project-item {
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    /* Adjust button for mobile */
+    .btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    /* Reduce padding for sections on mobile */
+    section {
+        padding: 40px 10px;
+    }
+
+    /* Footer adjustments for mobile */
+    footer {
+        padding: 20px 10px;
+    }
+}
