@@ -14,9 +14,42 @@
     background-image: url('img/3.jpg');
     background-size: cover;
     color: white;
+    /* background-color: #111; */
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+#hero #gooey {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #00ff88, #00cc66);
+    /* background: linear-gradient(to top right,red,blue); */
+
+
+    top: 60%;
+    left: 35%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey {
+    from {
+        filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
 }
 
 .hero-content {
