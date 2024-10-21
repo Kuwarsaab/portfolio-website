@@ -1,3 +1,156 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    color: white;
+    /* background-color: #111; */
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero #gooey {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #00ff88, #00cc66);
+    /* background: linear-gradient(to top right,red,blue); */
+
+
+    top: 60%;
+    left: 35%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey {
+    from {
+        filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+
+.hero-content {
+    max-width: 50%;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-content span {
+    color: #00ff88; /* Green highlight */
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #aaa;
+    max-width: 500px;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+
+.cta-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #00ff88;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #00cc66;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    max-width: 50%;
+    text-align: right;
+    z-index: 10;
+}
+
+.hero-image img {
+    width: 60%;
+    border-radius: 50%;
+    border:1px solid #fff ;
+    box-shadow: 10px 10px 30px #00ff88;
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Background Decoration (Optional) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #00ff88;
+    clip-path: circle(50% at 75% 25%);
+    z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
+
+
 /* Global Styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
@@ -12,21 +165,11 @@
 
 
 body {
-    background-image: url('img/1.jpg'); /* Ensure the correct path to the image */
-    background-size: cover; /* This makes the image cover the entire page */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Ensures the background stays in place when scrolling */
-    background-position: center;
     color: #eee;
     font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-image: url('img/1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -34,7 +177,7 @@ header {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     list-style-type: none;
 }
 
@@ -87,6 +230,17 @@ nav ul li a {
 .skills-section {
     text-align: center;
     padding: 50px 20px;
+}
+
+.section-about h2 span {
+    font-size: 2.5rem;
+    color: #00ff88;
+    padding: 50px 50px;
+}
+
+.section-about p {
+    font-size: 1.5rem;
+    padding: 30px 10px;
 }
 
 .skills-cloud {
@@ -149,6 +303,7 @@ footer {
     padding: 20px;
     color: #777;
 }
+
 
 
 
@@ -561,3 +716,232 @@ margin-top: 50px;
   
   
  
+
+/* Common styles */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Section 1: Hero */
+.section-hero {
+    background-image: url('img/3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Section 2: About */
+.section-about {
+    background-image: url('img/3.jpg');
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+.skill img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #eee;
+}
+
+.skill:hover img {
+    transform: scale(1.1);
+}
+
+.skill img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skill img {
+        width: 60px;
+    }
+}
+
+
+/* Section 3: Projects */
+.section-projects {
+    background-image: url('img/3.jpg');
+    /* background-size: cover; */
+    color: white;
+    text-align: center;
+}
+
+/* Section 4: Contact */
+.section-contact {
+    background-image: url('img/3.jpg');
+    /* background-size: cover; */
+    color: white;
+    text-align: center;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #00ff88;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00cc66;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #00ff88;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    /* Adjust header text size for mobile */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Center nav items and adjust spacing */
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    /* Stack project items vertically on mobile */
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Add padding for mobile */
+    .project-item {
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    /* Adjust button for mobile */
+    .btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    /* Reduce padding for sections on mobile */
+    section {
+        padding: 40px 10px;
+    }
+
+    /* Footer adjustments for mobile */
+    footer {
+        padding: 20px 10px;
+    }
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right,#00ff88,#00cc66);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+      
+    }
+}
